@@ -19,12 +19,29 @@ a{
 }
 .sticky{
     color:red;
-    background-color:#fbf5f379;
+    background-color:#fbf5f36a;
     position:sticky;
-    left:40%;
-    height:40px;
+    height:35px;
     top:0px;
-    padding-top:3px;
+    
+}
+.p-tag{
+    position:relative;
+    top:5px;
+    animation-name:fadeIn;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
 
 
