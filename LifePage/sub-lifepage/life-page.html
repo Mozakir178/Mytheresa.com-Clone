@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Section</title>
+
+    <link rel="stylesheet" href="life-css.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="life-nav">
+            <div>FILTER</div>
+            <div>
+                <p>LIFE/Home</p>
+
+            </div>
+            <div>
+                <p>500 Products</p>
+            </div>
+            <div>
+                <select name="sort" id="pricesort" onchange="pricesort();">
+                <option value="">Sort bye</option>
+                <option value="lth">Price Low to High</option>
+                <option value="htl">Price High to Low</option>
+                <option value="new">New Items</option>
+            </select>
+            </div>
+            <div class="next-page">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="sorting">
+                <div>
+                    <p>Home</p>
+                    <p onclick="showall()">Show all</p>
+                    <p>Home Decorations</p>
+                    <p>furniture</p>
+                    <p>lighting</p>
+                    <p>Tabletop</p>
+                    <p>HomeTextiles</p>
+
+                </div>
+                <hr>
+
+                <select name="Designer" id="designer" onclick="showCheckboxes()">
+                    <option value="">Designer</option>
+                </select>
+                <div id="checkboxes">
+                    <input type="text">
+                    <label for="one">
+                      <input type="checkbox"  />101 Copenhagen</label>
+                    <label for="two">
+                      <input type="checkbox" />1881 Ltd</label>
+                    <label>
+                      <input type="checkbox"/>Ahryun Lee Studio</label>
+                    <label>
+                        <input type="checkbox"/>Alanui</label>
+                    <label>
+                            <input type="checkbox" value="ANGLEPOSISE"/>Anglepoise
+                    </label>
+                    <label>
+                        <input type="checkbox" value="AYTN"/>AYTN
+                    </label>
+                    <label>
+                        <input type="checkbox" value="BURBERRY"/>Burberry
+                    </label>
+                    <label>
+                        <input type="checkbox" value="CASSUNA"/>Cassuna
+                </label>
+                    <label>
+                    <input type="checkbox" id="cire" value="CIRE TRUDON" onclick="filtering()"/>Cire Trudon
+            </label>
+                    <label>
+                <input type="checkbox" value="AHRYUN"/>Ahryun Lee Studio</label>
+                    <label>
+                  <input type="checkbox" value="ALANUI"/>Alanui</label>
+                    <label>
+                      <input type="checkbox" value="ROSENTHAL"/>Rosenthal
+              </label>
+                    <label>
+                  <input type="checkbox"/>Gabriela Hearst
+              </label>
+                    <label>
+                  <input type="checkbox"/>L'Objet La DoubleJ
+              </label>
+                    <label>
+                  <input type="checkbox"/> Mad Et Len
+          </label>
+                    <label>
+            <input type="checkbox"/>NasonMoretti
+    </label>
+                    <label>
+        <input type="checkbox"/>Reflections
+    </label>
+                    <label>
+        <input type="checkbox"/>Salvatori
+    </label>
+                    <label>
+        <input type="checkbox"/>Sophie Bille Brahe
+</label>
+                    <label>
+    <input type="checkbox"/>Taschen
+</label>
+                    <label>
+<input type="checkbox"/>Tom Dixon
+</label>
+                    <label>
+<input type="checkbox"/>Valentino
+</label>
+                    <label>
+<input type="checkbox"/>Venini
+</label>
+                    <label>
+    <input type="checkbox"/>Versace
+</label>
+                    <label>
+<input type="checkbox"/>Vitra
+</label>
+                    <label>
+<input type="checkbox"/>Wästberg
+</label>
+                    <label>
+<input type="checkbox"/>Zaha Hadid Design
+</label>
+                    <label>
+              <input type="checkbox"/>Cire Trudion
+      </label>
+
+                </div>
+
+
+
+                <hr>
+
+
+                <select name="" id="colors" onclick="showColors()">
+                    <option value="">Colours</option>
+                </select>
+                <hr>
+                <div id="color">
+                    <label>
+                        <input type="checkbox">Beige
+                    </label>
+                    <label>
+                        <input type="checkbox">Black
+                    </label>
+                    <label>
+                        <input type="checkbox">Blue
+                    </label>
+                    <label>
+                        <input type="checkbox">Brown
+                    </label>
+                    <label>
+                        <input type="checkbox">Gold
+                    </label>
+                    <label>
+                        <input type="checkbox">Green
+                    </label>
+                    <label>
+                        <input type="checkbox">Grey
+                    </label>
+                    <label>
+                        <input type="checkbox">Metallic
+                    </label>
+                    <label>
+                        <input type="checkbox">Multicoloured
+                    </label>
+                    <label>
+                        <input type="checkbox">Neutrals
+                    </label>
+                    <label>
+                        <input type="checkbox">Orange
+                    </label>
+                    <label>
+                        <input type="checkbox">Pink
+                    </label>
+                    <label>
+                        <input type="checkbox">Purple
+                    </label>
+                    <label>
+                        <input type="checkbox">Red
+                    </label>
+                    <label>
+                        <input type="checkbox">Silver
+                    </label>
+                    <label>
+                        <input type="checkbox">White
+                    </label>
+                    <label>
+                        <input type="checkbox">Yellow
+                    </label>
+                </div>
+
+
+            </div>
+            <div id="content"></div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="life-script.js"></script>

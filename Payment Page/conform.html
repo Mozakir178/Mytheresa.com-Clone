@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+
+<body>
+    <div id="main">
+
+
+
+        <div class="logo">
+            <img src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220614T171237" width="294px" alt="">
+        </div>
+
+        <div id="payment-navbar">
+            <p>SHOPPIN BAG</p>
+            <p>DELEVERY</p>
+            <p class="dark">PAYMENT</p>
+            <p>CONFIRM</p>
+        </div>
+        <hr>
+
+        <div class="otp">
+            <h1>Please enter your mobile number</h1>
+
+            <input type="number" placeholder="111 222 3333">
+
+            <button onclick="getOtp()">Submit</button>
+
+        </div>
+        <hr>
+
+
+        <div class="a" class="paypel">
+            <p class="btn-back">BACK TO PAYMENT</p>
+            <p>PROCEED TO OTP</p>
+        </div>
+        <p style="width : 35% ; font-size :17px " class="color-gray">Please note: By clicking this button, all data listed on this page will be erased for security reasons.</p>
+        <hr>
+
+        <p style="text-align :center ">You can also place your order via telephone.</p>
+        <div class="bottom ">
+            <div>
+                <img src="/images/phone.png " alt="error ">
+
+
+                <p> CALL US </p>
+
+                <p> +49 89 127695-101</p>
+
+                <p> Available 24/7
+                </p>
+                <p>
+                    In German: Monday through Friday, from 8:00 till 20:00 CET and Saturday, from 9:00 till 18:00
+                </p>
+                <p>CET*</p>
+                <p>
+                    *Except German public holidays.
+                </p>
+            </div>
+            <div>
+                <img src="/images/email.png " alt=" ">
+                <p> MAIL US</p>
+
+                <p> customercare@mytheresa.com</p>
+                <p>Please note that due to a high amount of requests, we might take a few days to get back to you. We apologize for any inconvenience this may cause.</p>
+
+            </div>
+        </div>
+        <hr>
+        <img src="/images/bottom.jpg " width="100% " alt=" ">
+    </div>
+</body>
+
+</html>
+<script>
+    function getOtp(event) {
+
+        const abc = document.querySelector('input').value;
+        if (abc.length < 10) {
+            alert('Please enter a valid number')
+        } else {
+
+            document.querySelector('button').style.display = 'none';
+            document.querySelector('input').style.display = 'none';
+            document.querySelector('h1').innerText = "Please enter otp"
+            const otp = document.createElement('input');
+            otp.placeholder = "Enter OTP"
+            const btn = document.createElement('button');
+            btn.innerText = "Submit"
+            btn.addEventListener('click', success)
+
+            document.querySelector('.otp').append(otp, btn);
+        }
+
+    }
+
+    function success(event) {
+        alert("otp match successful");
+        window.location.href = "success.html";
+    }
+
+
+    let total = localStorage.getItem("total");
+    console.log(total)
+        // total = Number(total);
+    const h1 = document.createElement('h1');
+    h1.innerText = "Total amount: " + total;
+    document.querySelector('.otp').append(h1);
+</script>
