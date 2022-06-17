@@ -118,7 +118,7 @@ function total() {
 // delete Product Page 
 function deleteProduct(el, index) {
     data.splice(index, 1);
-    localStorage.setItem('mendetail', JSON.stringify(data));
+    localStorage.setItem('cartdetail', JSON.stringify(data));
     dispcart(data)
         //   document.getElementById('productLength').innerText=mencart.length;
 }
@@ -164,3 +164,17 @@ function promoCode() {
 }
 dispcart(data)
 total();
+
+document.getElementById('womenspage').addEventListener('click', womenspage);
+// document.getElementById('menspage').addEventListener('click', menspage);
+// document.getElementById('kidspage').addEventListener('click', kidspage);
+document.getElementById('lifepage').addEventListener('click', lifepage);
+
+function womenspage(event) {
+    window.location.href = "../Women's-Page/women.html"
+}
+
+
+function lifepage(event) {
+    window.location.href = "../LifePage/life.html"
+}

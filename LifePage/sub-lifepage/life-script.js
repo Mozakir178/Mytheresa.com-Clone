@@ -291,7 +291,7 @@ function pricesort(lifeArray) {
 
 
 
-var lifeArray = JSON.parse(localStorage.getItem("cartdetail")) || [];
+// var lifeArray = JSON.parse(localStorage.getItem("cartdetail")) || [];
 lifeData.map(mapping);
 
 
@@ -320,7 +320,7 @@ function mapping(data) {
 function addToCart(data) {
     console.log(data);
     lifeArray.push(data);
-    localStorage.setItem("cartdetail", JSON.stringify(lifeArray));
+    // localStorage.setItem("cartdetail", JSON.stringify(lifeArray));
 }
 
 
