@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,126 +8,135 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <style>
-      h1{
-        /* border: 2px solid red; */
-        /* width:25%; */
-        text-align: center;
-        font-family: "Poppins";
-        margin: auto;
+        h1 {
+            /* border: 2px solid red; */
+            /* width:25%; */
+            text-align: center;
+            font-family: "Poppins";
+            margin: auto;
+        }
         
-    }
-    h1+p{
-        /* border: 2px solid red; */
-        /* width:30%; */
-        text-align: center;
-        font-family: "Poppins";
-        margin: auto;
-        margin-top: 30px;
-    }
-    #main{
-        width: 80%;
-        /* border: 2px solid red; */
-        height: 900px;
-    display: grid;
-    /* grid-template-columns: repeat(2,1fr);
+        h1+p {
+            /* border: 2px solid red; */
+            /* width:30%; */
+            text-align: center;
+            font-family: "Poppins";
+            margin: auto;
+            margin-top: 30px;
+        }
+        
+        #main {
+            width: 80%;
+            /* border: 2px solid red; */
+            height: 900px;
+            display: grid;
+            /* grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(4,400px); */
-    grid-template-areas: 
-    "a b b"
-    "c c d"
-    "e f f"
-    "g g h"
-    ;
-    gap:10px;
-    margin: auto;
-    margin-top: 30px;
-    }
- 
-    #main>div:nth-child(1){
-        /* background-color: teal; */
-        grid-area: a;
+            grid-template-areas: "a b b" "c c d" "e f f" "g g h";
+            gap: 10px;
+            margin: auto;
+            margin-top: 30px;
+        }
         
-    }
-    #main>div:nth-child(1)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    
-    #main>div:nth-child(2){
-        /* background-color: red; */
-        grid-area: b;
+        #main>div:nth-child(1) {
+            /* background-color: teal; */
+            grid-area: a;
+        }
         
-    }
-    #main>div:nth-child(2)>img{
-       width: 100%;
-      /* height: 100%; */
+        #main>div:nth-child(1)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
         
-    }
-    #main>div:nth-child(3){
-        /* background-color: pink; */
-        grid-area: c;
-    }
-    #main>div:nth-child(3)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    #main>div:nth-child(4){
-        /* background-color: purple; */
-        grid-area: d;
-    }
-    #main>div:nth-child(4)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    #main>div:nth-child(5){
-        /* background-color: green; */
-        grid-area: e;
-    }
-    #main>div:nth-child(5)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    #main>div:nth-child(6){
-        /* background-color: violet; */
-        grid-area: f;
-    }
-    #main>div:nth-child(6)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    #main>div:nth-child(7){
-        /* background-color: yellow; */
-        grid-area: g;
-    }
-    #main>div:nth-child(7)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    #main>div:nth-child(8){
-        /* background-color: orange; */
-        grid-area: h;
-    }
-    #main>div:nth-child(8)>img{
-        width: 100%;
-        /* height: 100%; */
-    }
-    #btn{
-        /* border: 2px solid red; */
-        width:7%;
-       margin: auto;
+        #main>div:nth-child(2) {
+            /* background-color: red; */
+            grid-area: b;
+        }
         
-        font-family: "poppins";
-    }
-    #btn>button{
-        width:100%;
-        border: none;
-        padding: 10px;
-       margin: auto;
-        margin-top: 20px;
-        font-family: "poppins";
-    }
+        #main>div:nth-child(2)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #main>div:nth-child(3) {
+            /* background-color: pink; */
+            grid-area: c;
+        }
+        
+        #main>div:nth-child(3)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #main>div:nth-child(4) {
+            /* background-color: purple; */
+            grid-area: d;
+        }
+        
+        #main>div:nth-child(4)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #main>div:nth-child(5) {
+            /* background-color: green; */
+            grid-area: e;
+        }
+        
+        #main>div:nth-child(5)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #main>div:nth-child(6) {
+            /* background-color: violet; */
+            grid-area: f;
+        }
+        
+        #main>div:nth-child(6)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #main>div:nth-child(7) {
+            /* background-color: yellow; */
+            grid-area: g;
+        }
+        
+        #main>div:nth-child(7)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #main>div:nth-child(8) {
+            /* background-color: orange; */
+            grid-area: h;
+        }
+        
+        #main>div:nth-child(8)>img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        #btn {
+            /* border: 2px solid red; */
+            width: 7%;
+            margin: auto;
+            font-family: "poppins";
+        }
+        
+        #btn>button {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            margin: auto;
+            margin-top: 20px;
+            font-family: "poppins";
+        }
     </style>
-  
+
 </head>
+
 <body>
     <h1>THE VACATION SHOP</h1>
     <p>Your getaway checklist for Spring/Summer 2022</p>
@@ -159,5 +169,22 @@
             <img src="8.png" alt="">
         </div>
     </div>
+    <div id="footer">
+
+    </div>
 </body>
+
 </html>
+
+<script>
+    let footer = document.getElementById('footer');
+
+    fetch('/All-Pages-Footer/womensFooter.html')
+        .then(res => res.text())
+        .then(data => {
+            footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+</script>

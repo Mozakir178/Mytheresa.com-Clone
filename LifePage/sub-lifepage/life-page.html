@@ -210,6 +210,9 @@
 
         </div>
     </div>
+    <div id="footer">
+
+    </div>
 
 
 </body>
@@ -217,3 +220,15 @@
 </html>
 
 <script src="life-script.js"></script>
+
+<script>
+    let footer = document.getElementById("footer");
+    fetch('/All-Pages-Footer/lifeFooter.html')
+        .then(res => res.text())
+        .then(data => {
+            footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+</script>

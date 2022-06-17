@@ -126,6 +126,10 @@
         <p class="buttons"> <a href="/Suraj-all-work/womensandalinner/womensandalinner.html"> SHOP NOW <span>>></span></a> </p>
     </div>
 
+    <div id="footer">
+
+    </div>
+
 
 
 
@@ -146,4 +150,14 @@
     function sendal(event) {
         window.location.href = "/Suraj-all-work/womensandalinner/womensandalinner.html"
     }
+
+    let footer = document.getElementById("footer");
+    fetch('/All-Pages-Footer/womensFooter.html')
+        .then(res => res.text())
+        .then(data => {
+            footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
 </script>

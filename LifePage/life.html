@@ -23,7 +23,7 @@
         <div class="empty"></div>
 
         <div class="section-button top">
-            <a href="life-page.html" class="button">SHOP NOW >></a>
+            <a href="/LifePage/sub-lifepage/life-page.html" class="button">SHOP NOW >></a>
         </div>
 
         <img src="https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW22/BIG_EN/Big_Week3_LIFE_desktop_1_2x_20220530121415.jpg?imwidth=1180&imdensity=1" alt="life" class="main-image">
@@ -40,7 +40,7 @@
                     <img src="https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW24/ActboxTall_CW05_Actbox_Tall_2x_20220612221125.jpg?imwidth=600&imdensity=2" alt="">
                 </div>
                 <div class="section-button">
-                    <a href="life-page.html">SHOP NOW >></a>
+                    <a href="/LifePage/sub-lifepage/life-page.html">SHOP NOW >></a>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                     <img src="https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW24/ActboxSmall_CW05_small_1_2x_20220612221116.jpg?imwidth=600&imdensity=2" alt="">
                 </div>
                 <div class="section-button">
-                    <a href="/sub-lifepage/life-page.html">SHOP NOW >></i> </a>
+                    <a href="LifePage/sub-lifepage/life-page.html">SHOP NOW >></i> </a>
                 </div>
             </div>
             <div class="div-3 middle">
@@ -75,7 +75,7 @@
                     <img src="https://img.mytheresa.com/media/static/raw/cms/l/Life_HP_2022_CW24/ActboxSmall_CW05_small_2_2x_20220612221117.jpg?imwidth=600&imdensity=2" alt="">
                 </div>
                 <div class="section-button">
-                    <a href="life-page.html" class="button">SHOP NOW >></a>
+                    <a href="/LifePage/sub-lifepage/life-page.html" class="button">SHOP NOW >></a>
                 </div>
 
 
@@ -119,13 +119,19 @@
 
 
             <div class="last-button">
-                <a href="life-page.html" class="button">SHOP NOW >></a>
+                <a href="../LifePage/sub-lifepage/life-page.html" class="button">SHOP NOW >></a>
             </div>
         </section>
         <hr style=" margin-bottom: 50px ; margin-top:10px;">
         <br><br>
         <br>
     </div>
+    <div id="footer">
+
+    </div>
+
+
+
 
 
 
@@ -140,8 +146,19 @@
         images[i].addEventListener('click', linking);
 
         function linking(event) {
-            window.location.href = "/sub-lifepage/life-page.html"
+            window.location.href = "/LifePage/sub-lifepage/life-page.html"
         }
 
     }
+
+
+    let footer = document.getElementById("footer");
+    fetch('/All-Pages-Footer/lifeFooter.html')
+        .then(res => res.text())
+        .then(data => {
+            footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
 </script>

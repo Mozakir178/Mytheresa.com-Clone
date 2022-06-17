@@ -11,6 +11,7 @@ img:hover {
 a {
     text-decoration: none;
     color: white;
+    margin-bottom: 30px;
 }
 
 .sale-img {
