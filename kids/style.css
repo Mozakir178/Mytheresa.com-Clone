@@ -1,0 +1,396 @@
+#header {
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 95%;
+    height: 50px;
+
+ }
+
+ #header>div:nth-child(1) {
+
+    width: 50%;
+    text-align: center;
+    height: 30px;
+    margin: auto;
+    margin-left: 25%;
+
+ }
+
+ #header>div:nth-child(2) {
+
+    width: 14%;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 0px;
+
+
+ }
+
+
+ #header>div:nth-child(1)>img {
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    text-align: right;
+ }
+
+ #bag {
+    text-align: right;
+    width: 150px;
+    height: 30px;
+    display: flex;
+
+ }
+
+ #jhola {
+    width: 30px;
+    height: 40px;
+
+
+ }
+
+ #heading {
+
+    width: 95%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+
+ }
+
+ #heading>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    color: #75758b;
+    font-weight: 100;
+    font-size: 1px;
+    top: 5px;
+    align-items: center;
+
+ }
+
+ #heading>div:nth-child(2)>input {
+    width: 80%;
+
+    border: 1px solid #e7e7e7;
+    margin-top: 5px;
+    float: right;
+    padding-right: 0px;
+    padding-top: 8px;
+    padding: 6px;
+    margin-top: 8px;
+    border: none;
+ }
+
+ #heading>div:nth-child(2)>button {
+    float: right;
+    padding: 6px 10px;
+
+    margin-right: 16px;
+    background-color: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+ }
+
+
+ #heading>div>p {
+    font-weight: 100;
+    font-size: -10px;
+
+ }
+
+ #changingstyle {
+
+    margin: auto;
+    width: 95%;
+    height: 40px;
+    padding: 5px;
+
+
+ }
+
+ #kids {
+
+    width: 95%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ #kids>div>img {
+    width: 100%;
+    height: 100%;
+
+ }
+
+ #kids>div:nth-child(1) {
+    margin-right: 2%;
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 50%;
+ }
+
+ #kids>div:nth-child(2) {
+    width: 50%;
+    position: relative;
+    color: white;
+    text-align: center;
+
+ }
+
+ .girls {
+    width: 30%;
+    position: absolute;
+    bottom: 15%;
+    left: 37%;
+    font-size: 40px;
+    font-weight: 100;
+
+
+
+ }
+
+ .shop {
+    position: absolute;
+    color: black;
+    background-color: white;
+    bottom: 15%;
+    left: 43%;
+    font-size: 6px;
+
+    width: 20%;
+    height: 25px;
+    text-align: center;
+    padding-top: -50px;
+ }
+
+ /* .shop>p{
+ padding-top: -5px;
+text-align:center ;
+color: black;
+} */
+ /* baby part css */
+ #baby {
+    margin: auto;
+    margin-top: 30px;
+    width: 95%;
+
+    position: relative;
+    color: rgb(46, 9, 9);
+
+ }
+
+ #baby>img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .babyw {
+    width: 30%;
+    position: absolute;
+    bottom: 30%;
+    left: 43%;
+    font-size: 50px;
+ }
+
+ .shopbaby {
+
+    position: absolute;
+
+    color: white;
+    background-color: black;
+    bottom: 30%;
+    left: 42%;
+    font-size: 6px;
+    width: 12%;
+    height: 26px;
+    text-align: center;
+
+
+ }
+
+ .shopbaby>p {
+    position: relative;
+    padding-top: -5px;
+ }
+
+ /* sale css */
+ #sale {
+
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transform: (-50%, -50%);
+ }
+
+ #sale>div>img {
+    width: 100%;
+    height: 100%;
+
+ }
+
+ #sale>div:nth-child(1) {
+
+    width: 50%;
+    position: relative;
+    color: red;
+    text-align: center;
+
+ }
+
+ /* #sale>div:nth-child(1)+p+p {
+    width: 50%;
+    position: relative;
+    color:red;
+    text-align: center;
+ } */
+
+ #sale>div:nth-child(2) {
+    width: 50%;
+    position: relative;
+    color: white;
+    text-align: center;
+
+ }
+
+ .kids {
+    width: 40%;
+    position: absolute;
+    bottom: 20%;
+    left: 33%;
+    font-size: 20px;
+    font-weight: 100;
+
+ }
+
+ .kids>p+p {
+
+    width: 50%;
+    position: absolute;
+    bottom: 40%;
+    left: 26%;
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+
+
+ }
+
+
+
+ .shopk {
+    position: absolute;
+    color: white;
+    background-color: black;
+    bottom: 15%;
+    left: 40%;
+    font-size: 6px;
+    width: 25%;
+    height: 25px;
+    text-align: center;
+    padding-top: -50px;
+    font-weight: 10;
+ }
+
+ #sale>div:nth-child(2)>.shopk {
+    background-color: white;
+    color: black;
+ }
+
+ #upper {
+
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+ }
+
+ #scrole {
+
+    margin: auto;
+    width: 95%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+ }
+
+ #scrole>div:nth-child(1) {
+
+    width: 4%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 8%;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+
+ }
+
+ #scrole>div:nth-child(3) {
+
+    width: 4%;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 8%;
+
+
+ }
+
+ #scrole>div:nth-child(2) {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 7%;
+     
+    justify-content: space-between;
+ }
+
+ #scrole>div:nth-child(2)>div {
+    width: 18.5%;
+    
+
+
+ }
+
+ #send>div>img {
+    height: 80%;
+    width: 100%;
+ }
+
+ #send>div>p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1px;
+ }
+
+ #last {
+    background-color: black;
+    color: white;
+    width: 16%;
+    margin: auto;
+    margin-top: 1%;
+     
+    position: relative;
+    text-align: center;
+    font-size: 5px;
+    font-weight: 100;
+    height: 20px;
+    padding-top: 5px;
+ }
