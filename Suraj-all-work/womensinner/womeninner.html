@@ -9,9 +9,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="womensinner.css">
+
+    <link rel="stylesheet" href="/All-pages-Header/navstyle.css">
+    <link rel="stylesheet" href="/All-pages-Header/custom.css">
 </head>
 
 <body>
+    <div id="header"></div>
     <hr />
     <!-- <h1>KIDS</h1>
     <h1>GIRLS</h1> -->
@@ -19,7 +23,8 @@
         <div>
             <img src="https://img.mytheresa.com/media/static/raw/cms/l/Designer_Bios/Loro-Piana/Logo/DesignerBios_Logo_Responsive_Loro-Piana_2x.jpg?imwidth=600&imdensity=1" alt="">
             <p>Experience Italian excellence with Loro Piana’s wardrobe essentials of sleek separates, luxurious loungewear, and a whole host of cashmere classics. The brand stakes its claim on uncompromising quality, controlling every step of the manufacturing
-                process.<br><br> Since its launch in 1924, Loro Piana has been synonymous with elegance, innovation, and the sustainable craftsmanship of the finest raw materials, including cashmere and baby cashmere, vicuña, and a variety of wools. Appealing
+                process.
+                <br><br> Since its launch in 1924, Loro Piana has been synonymous with elegance, innovation, and the sustainable craftsmanship of the finest raw materials, including cashmere and baby cashmere, vicuña, and a variety of wools. Appealing
                 to the sense of touch, every piece is crafted to ensure comfort and unparalleled quality. </p>
         </div>
         <div>
@@ -227,6 +232,17 @@
         .then(res => res.text())
         .then(data => {
             footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+
+    let header = document.getElementById('header');
+
+    fetch('/All-Pages-Header/womenHeader.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, "text/html")
             eval(doc.querySelector("script").textContent)

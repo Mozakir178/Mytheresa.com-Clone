@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life</title>
     <link rel="stylesheet" href="life.css">
+
+    <link rel="stylesheet" href="/All-pages-Header/navstyle.css">
+    <link rel="stylesheet" href="/All-pages-Header/custom.css">
     <style>
 
     </style>
 
 </head>
+<div id="header"></div>
 
 <body>
+
 
     <div id="main-container-life">
         <div class="sticky">
@@ -157,6 +162,17 @@
         .then(res => res.text())
         .then(data => {
             footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+
+    let header = document.getElementById('header');
+
+    fetch('/All-Pages-Header/lifeHeader.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, "text/html")
             eval(doc.querySelector("script").textContent)
