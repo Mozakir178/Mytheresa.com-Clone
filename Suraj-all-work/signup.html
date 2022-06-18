@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="/All-Pages-Footer/footer.css">
+    <link rel="stylesheet" href="/All-pages-Header/custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <style>
-        #main {
+        #maina {
             width: 80%;
             margin: auto;
             /* border: 2px solid red; */
@@ -16,246 +19,278 @@
             grid-template-columns: repeat(2, 1fr);
             /* height: 700px; */
         }
-
-        #main>div {
+        
+        #maina>div {
             /* border: 2px solid blue; */
             /* height: 100%; */
             padding: 20px;
         }
-        .flex{
+        
+        .flexa {
             width: 30%;
             display: flex;
             justify-content: space-between;
         }
-        #profession{
+        
+        #professiona {
             width: 91%;
             height: 40px;
             margin-top: 5px;
         }
-        #form>input{
+        
+        #form>input {
             width: 90%;
             height: 40px;
             margin-top: 8px;
         }
-        #form1>input{
+        
+        #form1>input {
             width: 90%;
             height: 40px;
             margin-top: 8px;
         }
-        .flex1{
+        
+        .flex1a {
             /* border: 2px solid rebeccapurple; */
             width: 90%;
             display: flex;
             /* justify-content: space-between; */
         }
-        .whitebtn{
+        
+        .whitebtna {
             border: none;
             background-color: #f2f2f2;
             color: black;
             font-family: poppins;
             width: 30px;
-           
         }
-        .whitebtn:hover{
+        
+        .whitebtna:hover {
             border: none;
             background-color: #e3d4d4;
             color: black;
             font-family: poppins;
             width: 30px;
-            
         }
-       .pop{
-        font-family: poppins;
-        font-size: 13px;
-        color: black;
-       }
-       .popbig{
-        font-family: poppins;
-        font-size: 15px;
-        font-weight: bold;
-       }
-       button{
-        width:15%;
-        border: none;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-       }
-       .bold{
-        font-weight: bold;
-       }
+        
+        .popa {
+            font-family: poppins;
+            font-size: 13px;
+            color: black;
+        }
+        
+        .popbiga {
+            font-family: poppins;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        button {
+            width: 15%;
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .bolda {
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <hr>
-    <div id="main">
+    <div id="header"></div>
+
+    <div id="maina">
         <div>
-            <p class="popbig">CREATE AN ACCOUNT</p>
-            <p class="pop">Please enter the following information to create your account.</p>
-            <div class="flex">
+            <p class="popbiga">CREATE AN ACCOUNT</p>
+            <p class="popa">Please enter the following information to create your account.</p>
+            <div class="flexa">
                 <input type="radio" id="ms" name="fav_language" value="ms">
                 <label for="ms" class="popbig">Ms</label><br>
                 <input type="radio" id="mrs" name="fav_language" value="mrs">
                 <label for="mrs" class="popbig">Mrs</label><br>
                 <input type="radio" id="mr." name="fav_language" value="mr.">
-                <label for="mr."class="popbig">Mr.</label>
+                <label for="mr." class="popbig">Mr.</label>
             </div>
-            <select id="profession">
+            <select id="professiona">
                 <option value="academic">Academic title</option>
                 <option value="dr">Dr</option>
                 <option value="professor">Professor</option>
                 <option value="profdoc">Prof. Dr.</option>
             </select>
             <form id="form">
-                <input type="text" id="fname"  placeholder="first name *"><br>
-                <input type="text" id="lname"  placeholder="last name *"><br>
-                <input type="email" id="email"  placeholder="Email address *" required ><br>
-                <input type="password" id="pass"  placeholder="Password *"  required><br>
-                <input type="password" id="repass"  placeholder="Confirm Password *" required >
+                <input type="text" id="fname" placeholder="first name *"><br>
+                <input type="text" id="lname" placeholder="last name *"><br>
+                <input type="email" id="email" placeholder="Email address *" required><br>
+                <input type="password" id="pass" placeholder="Password *" required><br>
+                <input type="password" id="repass" placeholder="Confirm Password *" required>
                 <div class="flex1">
-                 
-                        <input type="checkbox" required><span class="bolder pop bold">From now on I will receive the Mytheresa Newsletter with selected fashion offers. If I do not wish to receive the newsletter, I can unsubscribe at any time free of charge at privacy@mytheresa.com.</span>
-                        
+
+                    <input type="checkbox" required><span class="bolder pop bold">From now on I will receive the Mytheresa Newsletter with selected fashion offers. If I do not wish to receive the newsletter, I can unsubscribe at any time free of charge at privacy@mytheresa.com.</span>
+
                 </div>
-                <p class="pop bold">I agree that Mytheresa may insert analytical web beacons into the newsletter and create a personalized user profile based on my purchase and usage behavior, including sending a notification when I have placed something in the shopping cart. Further details can be found in our Privacy Policy, clause 5. I understand that I can revoke my consent at any time by emailing privacy@mytheresa.com.
+                <p class="popa bolda">I agree that Mytheresa may insert analytical web beacons into the newsletter and create a personalized user profile based on my purchase and usage behavior, including sending a notification when I have placed something in the shopping
+                    cart. Further details can be found in our Privacy Policy, clause 5. I understand that I can revoke my consent at any time by emailing privacy@mytheresa.com.
 
                 </p>
                 <p>* required fields</p>
                 <input type="submit" class="whitebtn">
-              </form>
+            </form>
         </div>
         <div>
 
-            <p class="popbig">ALREADY REGISTERED?</p>
-            <p class="pop">If you have an account with us, please log in.</p>
+            <p class="popbiga">ALREADY REGISTERED?</p>
+            <p class="popa">If you have an account with us, please log in.</p>
             <form id="form1">
-                <input type="email" id="email1"  placeholder="Email address *" ><br>
-                <input type="password" id="pass1"  placeholder="Password *" ><br>
-               
-                 
-                <p class="pop">* required fields</p>
-               
-                <a href="#" class="pop" style="display:block ;">Forgot Your Password?</a>
+                <input type="email" id="email1" placeholder="Email address *"><br>
+                <input type="password" id="pass1" placeholder="Password *"><br>
+
+
+                <p class="popa">* required fields</p>
+
+                <a href="#" class="popa" style="display:block ;">Forgot Your Password?</a>
 
                 <button id="login" type="submit">Login</button>
-                <p class="pop">At Mytheresa, we keep your information secure. As a result, it will be necessary for you to log in to your account before you are able to place an order or change the information on your account. You will be asked to log in to complete your order even if you have already been greeted on the website.</p>
-              </form>
+                <p class="popa">At Mytheresa, we keep your information secure. As a result, it will be necessary for you to log in to your account before you are able to place an order or change the information on your account. You will be asked to log in to complete
+                    your order even if you have already been greeted on the website.</p>
+            </form>
 
         </div>
     </div>
     <hr>
+    <div id="footer"></div>
 </body>
 
 </html>
 <script>
     var form = document.querySelector("form");
     var userData = JSON.parse(localStorage.getItem("userdetail")) || []
-    form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
         var data = {
-            fname: form.fname.value,
-            lname: form.lname.value,
-            email: form.email.value,
-            password1: form.pass.value,
-            password2 :form.repass.value,
+                fname: form.fname.value,
+                lname: form.lname.value,
+                email: form.email.value,
+                password1: form.pass.value,
+                password2: form.repass.value,
 
-        }
-        // console.log(data.password1,data.password2)
-        if (checkEmail(data.email) == true && data.password1==data.password2) {
+            }
+            // console.log(data.password1,data.password2)
+        if (checkEmail(data.email) == true && data.password1 == data.password2) {
             userData.push(data);
             localStorage.setItem("userdetail", JSON.stringify(userData));
             alert("signup succesfull")
-            // window.location.href="signIn.html"
+                // window.location.href="signIn.html"
 
-        }
-        else if(data.password1!=data.password2){
-           alert("please check your password")
-        }
-
-        else {
+        } else if (data.password1 != data.password2) {
+            alert("please check your password")
+        } else {
             alert("Email already exist")
-        } 
-        
+        }
+
     })
+
     function checkEmail(email) {
-        var filter = userData.filter(function (el) {
+        var filter = userData.filter(function(el) {
             return email == el.email
         })
         if (filter.length > 0) {
             return false;
-        }
-        else {
+        } else {
             return true;
         }
     }
 
 
-// for login
+    // for login
 
-document.querySelector("#form1").addEventListener("submit",myfcn)
+    document.querySelector("#form1").addEventListener("submit", myfcn)
 
-    function myfcn(){
+    function myfcn() {
         event.preventDefault()
         var data = JSON.parse(localStorage.getItem("userdetail"))
-       var uemail = document.querySelector("#email1").value 
-       var upass = document.querySelector("#pass1").value 
-       let is=false;
-    //    let a
-       for(var i =0;i<data.length;i++){
-        if(uemail==data[i].email && upass==data[i].password1){
-           is=true;
-        //    a=i
-        // console.log(uemail)
-       }
-       }
-       if(is){
-        alert("login successfull")
-           location.replace("navbarandhomepage.html")
-        //    localStorage.setItem("loginAs",JSON.stringify(data[a].name))
-       }
-       else{
-        alert('wrong details')
-       } 
-       
+        var uemail = document.querySelector("#email1").value
+        var upass = document.querySelector("#pass1").value
+        let is = false;
+        //    let a
+        for (var i = 0; i < data.length; i++) {
+            if (uemail == data[i].email && upass == data[i].password1) {
+                is = true;
+                //    a=i
+                // console.log(uemail)
+            }
+        }
+        if (is) {
+            alert("login successfull")
+            location.replace("/Women's Page/women.html")
+                //    localStorage.setItem("loginAs",JSON.stringify(data[a].name))
+        } else {
+            alert('wrong details')
+        }
+
     }
- 
-       
-    
 
 
-// document.querySelector("form").addEventListener("submit",mylogin)
-//     // console.log(data[0].email)
-//     function mylogin(){
-//        event.preventDefault()
-//        checkUser();
-//       }
 
-//       function checkUser(){
-   
-//       let  uname= document.querySelector("#email").value;
-//      let    upasw= document.querySelector("#pass").value
-//      let is=false;
-//       for(var i =0;i<data.length;i++){
-//        if(uname==data[i].email && upasw==data[i].password){
-//            is=true;
-//         // console.log(userData[i].email)
-//       }
-//    }   
-//    if(is){
-//        alert("Login sucesfull")
-//     //    window.location.href="#"
-//    }
-//    else{
-//        alert("Wrong pasw")
-//    }
-// // userData.forEach(el => {
-// //     if(uname==el.email && upasw==el.password){
-// //            is=true;
-// //         console.log(uname,upasw)
-// //       }
-// // });
-//       }
+
+
+    // document.querySelector("form").addEventListener("submit",mylogin)
+    //     // console.log(data[0].email)
+    //     function mylogin(){
+    //        event.preventDefault()
+    //        checkUser();
+    //       }
+
+    //       function checkUser(){
+
+    //       let  uname= document.querySelector("#email").value;
+    //      let    upasw= document.querySelector("#pass").value
+    //      let is=false;
+    //       for(var i =0;i<data.length;i++){
+    //        if(uname==data[i].email && upasw==data[i].password){
+    //            is=true;
+    //         // console.log(userData[i].email)
+    //       }
+    //    }   
+    //    if(is){
+    //        alert("Login sucesfull")
+    //     //    window.location.href="#"
+    //    }
+    //    else{
+    //        alert("Wrong pasw")
+    //    }
+    // // userData.forEach(el => {
+    // //     if(uname==el.email && upasw==el.password){
+    // //            is=true;
+    // //         console.log(uname,upasw)
+    // //       }
+    // // });
+    //       }
+
+
+
+    let footer = document.getElementById("footer");
+    fetch('/All-Pages-Footer/lifeFooter.html')
+        .then(res => res.text())
+        .then(data => {
+            footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+
+    let header = document.getElementById('header');
+
+    fetch('/All-Pages-Header/lifeHeader.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
 </script>
