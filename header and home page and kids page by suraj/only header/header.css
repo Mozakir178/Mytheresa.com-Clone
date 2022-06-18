@@ -194,10 +194,10 @@ body {
 
 
 
-/* .container {
-    max-width: 1200px;
-    margin: auto;
-} */
+.container {
+   position:fixed;
+   top: 0;
+}
 
 .row {
     display: flex;
