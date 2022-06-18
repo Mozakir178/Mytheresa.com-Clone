@@ -1,5 +1,5 @@
 #main-container-life {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -108,7 +108,6 @@ html {
 .middle {
     padding-bottom: 40px;
     height: fixed;
-    box-shadow: black 0px 0px 2px 0px;
 }
 
 .middle:nth-last-of-type(2) {
@@ -139,7 +138,6 @@ html {
 }
 
 .section-button {
-    border: 1px solid green;
     display: grid;
     width: 25%;
     height: 40px;
@@ -158,7 +156,6 @@ a {
 }
 
 .last-button {
-    border: 1px solid green;
     display: grid;
     width: 12%;
     height: 40px;
