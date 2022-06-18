@@ -8,9 +8,14 @@
     <title>WOMEN</title>
     <link rel="stylesheet" href="women.css">
     <link rel="stylesheet" href="utils.css">
+
+    <link rel="stylesheet" href="/All-pages-Header/navstyle.css">
+    <link rel="stylesheet" href="/All-pages-Header/custom.css">
 </head>
+<div id="header"></div>
 
 <body>
+
 
     <div class="sticky font-family">
         <p class="p-tag text-center">Sale: Now upto 60% off</p>
@@ -32,12 +37,14 @@
 
     <div class="flex space-around tagline font-family text-center">
         <div>
-            <p>Mytheresa presents</p>
-            <p>The Loro Piana Resort Collection</p>
+            <br><br>
+            <p class="smallfont">Mytheresa presents</p>
+            <p class="bigfont">The Loro Piana Resort Collection</p>
         </div>
         <div>
-            <p>Keep your cool</p>
-            <p>Sandals for soaring temparatures</p>
+            <br><br>
+            <p class="smallfont">Keep your cool</p>
+            <p class="bigfont">Sandals for soaring temparatures</p>
         </div>
     </div>
 
@@ -51,10 +58,11 @@
             <p class="buttons"><a onclick="sendal()">SHOP NOW &nbsp;<span>>></span></a></p>
         </div>
         <div class="font-family text-center">
-            <p>
+            <br><br>
+            <p class="smallfont">
                 the life edit
             </p>
-            <p>
+            <p class="bigfont">
                 The choice is clear with our glassware
             </p>
         </div>
@@ -65,12 +73,14 @@
     </div>
     <div class="flex space-around tagline font-family text-center">
         <div>
-            <p>going out-out?</p>
-            <p>We've got just the party bag</p>
+            <br><br>
+            <p class="smallfont">going out-out?</p>
+            <p class="bigfont">We've got just the party bag</p>
         </div>
         <div>
-            <p>Aquazzura x mytheresa</p>
-            <p>The Aquazzura exclusive summer capsule collection</p>
+            <br><br>
+            <p class="smallfont">Aquazzura x mytheresa</p>
+            <p class="bigfont">The Aquazzura exclusive summer capsule collection</p>
         </div>
     </div>
 
@@ -84,10 +94,11 @@
             <p class="buttons"><a href="/Suraj-all-work/womensinner/womeninner.html">SHOP NOW &nbsp;<span>>></span></a></p>
         </div>
         <div class="font-family text-center">
-            <p>
+            <br><br>
+            <p class="smallfont">
                 RHINESTONE RENDITIONS
             </p>
-            <p>
+            <p class="bigfont">
                 Jewelry making the case for crystals
             </p>
         </div>
@@ -99,8 +110,9 @@
 
 
     <div class="tagline-2 text-center font-family">
-        <p>sitting pretty</p>
-        <p>Summery styles for picnics in the park</p>
+        <br><br>
+        <p class="smallfont">sitting pretty</p>
+        <p class="bigfont">Summery styles for picnics in the park</p>
     </div>
 
     <div class="image-container flex">
@@ -151,11 +163,23 @@
         window.location.href = "/Suraj-all-work/womensandalinner/womensandalinner.html"
     }
 
+
     let footer = document.getElementById("footer");
     fetch('/All-Pages-Footer/womensFooter.html')
         .then(res => res.text())
         .then(data => {
             footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+
+    let header = document.getElementById('header');
+
+    fetch('/All-Pages-Header/womenHeader.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, "text/html")
             eval(doc.querySelector("script").textContent)

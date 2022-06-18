@@ -8,12 +8,21 @@
     <title>Life Section</title>
 
     <link rel="stylesheet" href="life-css.css">
-    <style>
 
+    <link rel="stylesheet" href="/All-pages-Header/navstyle.css">
+    <link rel="stylesheet" href="/All-pages-Header/custom.css">
+    <style>
+        .shop {
+            left: 60% !important;
+            font-weight: 300 !important;
+        }
     </style>
 </head>
 
+<div id="header"></div>
+
 <body>
+
     <div id="container">
         <div class="life-nav">
             <div>FILTER</div>
@@ -227,6 +236,18 @@
         .then(res => res.text())
         .then(data => {
             footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+
+
+    let header = document.getElementById('header');
+
+    fetch('/All-pages-Header/lifeHeader.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, "text/html")
             eval(doc.querySelector("script").textContent)
