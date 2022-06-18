@@ -314,7 +314,7 @@
 #body>div:nth-child(2)>div{
     
 } */
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
    
    .bolder:hover {
        font-weight: bold;
@@ -333,7 +333,7 @@
        display: inline-block;
        margin-top: 5px;
    }
-=======
+/* ======= */
 .bolder:hover{
     font-weight: bold;
     cursor: pointer;
@@ -391,4 +391,4 @@ input [type="checkbox"]{
       } 
      
   }
->>>>>>> ba8cdcb63cd1b24023a87a437ca291a41fe434a8
+/* >>>>>>> ba8cdcb63cd1b24023a87a437ca291a41fe434a8 */
