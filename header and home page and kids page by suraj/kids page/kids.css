@@ -1,149 +1,175 @@
-html::-webkit-scrollbar{
-    width:10px;
+html::-webkit-scrollbar {
+    width: 10px;
     background-color: white;
-  }
-  html::-webkit-scrollbar-thumb{
+}
+
+html::-webkit-scrollbar-thumb {
     border-radius: 25px;
     /* background-color: black; */
-    background: linear-gradient(black,grey);
-  }
-  #main{
+    background: linear-gradient(black, grey);
+}
+
+#main {
     width: 80%;
     /* border: 2px solid red; */
     /* height: 900px; */
-display: grid;
-/* grid-template-columns: repeat(2,1fr);
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr);
 grid-template-rows: repeat(4,400px); */
-grid-template-areas: 
-"a b"
-"c c"
-"d e"
-;
-gap:10px;
-margin: auto;
-margin-top: 30px;
+    grid-template-areas: "a b" "c c" "d e";
+    gap: 10px;
+    margin: auto;
+    margin-top: 30px;
 }
-#main>div{
+
+#main>div {
     /* border: 2px solid green; */
     height: 100%;
 }
-#main>div:nth-child(1){
+
+#main>div:nth-child(1) {
     /* background-color: teal; */
     grid-area: a;
 }
-#main>div:nth-child(1)>a img{
-    width:100%;
+
+#main>div:nth-child(1)>a img {
+    width: 100%;
 }
-#main>div:nth-child(2){
+
+#main>div:nth-child(2) {
     /* background-color: red; */
     grid-area: b;
 }
-#main>div:nth-child(2)>a>img{
-    width:100%;
+
+#main>div:nth-child(2)>a>img {
+    width: 100%;
 }
-#main>div:nth-child(3){
+
+#main>div:nth-child(3) {
     /* background-color: green; */
     /* // made by suraj web 19 roll no 1274  */
     grid-area: c;
 }
-#main>div:nth-child(3)>a>img{
-    width:100%;
+
+#main>div:nth-child(3)>a>img {
+    width: 100%;
 }
-#main>div:nth-child(4){
+
+#main>div:nth-child(4) {
     /* background-color: green; */
     grid-area: d;
 }
-#main>div:nth-child(4)>a>img{
-    width:100%;
+
+#main>div:nth-child(4)>a>img {
+    width: 100%;
 }
-#main>div:nth-child(5){
+
+#main>div:nth-child(5) {
     /* background-color: green; */
     grid-area: e;
 }
-#main>div:nth-child(5)>a>img{
-    width:100%;
+
+#main>div:nth-child(5)>a>img {
+    width: 100%;
 }
 
-#btn{
+#btn {
     /* border: 2px solid red; */
+    width: 15%;
+    margin: auto;
     /* // made by suraj web 19 roll no 1274  */
-    width:15%;
-   margin: auto;
-    
+    width: 15%;
+    margin: auto;
     font-family: "poppins";
 }
-#btn>button{
-    width:100%;
+
+#btn>button {
+    width: 100%;
     border: none;
     padding: 10px;
-   margin: auto;
-   color: black;
+    margin: auto;
+    color: black;
     margin-top: 20px;
     font-family: "poppins";
 }
+
+
 /* hr{
     margin-top: 70px;
     width: 80%;
 } */
-#footer-editorial{
-width:80%;
-margin: auto;
-}
-#footer-editorial>h1{
-/* border: 2px solid rebeccapurple; */
-width: 40%;
-margin: auto;
-font-family: "poppins";
-font-size: 15px;
-word-spacing: 5px;
-}
-#footer-editorial>h1+p{
-/* border: 2px solid rebeccapurple; */
-/* // made by suraj web 19 roll no 1274  */
-width: 100%;
-margin: auto;
-font-family: "poppins";
-margin-top: 10px;
-font-size: 12px;
 
-font-weight: bold;
+hr #footer-editorial {
+    width: 80%;
+    margin: auto;
 }
-#footer-editorial>h1+p>a{
-color: black;
+
+#footer-editorial>h1 {
+    /* border: 2px solid rebeccapurple; */
+    width: 40%;
+    margin: auto;
+    font-family: "poppins";
+    font-size: 15px;
+    word-spacing: 5px;
 }
-#footer-editorial>h2{
-font-family: "poppins";
-font-size: 17px;
+
+#footer-editorial>h1+p {
+    /* border: 2px solid rebeccapurple; */
+    /* // made by suraj web 19 roll no 1274  */
+    width: 100%;
+    margin: auto;
+    font-family: "poppins";
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
-#footer-editorial>h2+p{
-/* border: 2px solid rebeccapurple; */
-width: 100%;
-margin: auto;
-font-family: "poppins";
-margin-top: 10px;
-font-size: 12px;
-font-weight: bold;
+
+#footer-editorial>h1+p>a {
+    color: black;
 }
-#footer-editorial>h2+p>a{
-color: black;
+
+#footer-editorial>h2 {
+    font-family: "poppins";
+    font-size: 17px;
 }
-.btn-danger{
-/* border: 2px solid yellow; */
-/* // made by suraj web 19 roll no 1274  */
-/* align-items: center; */
-display: block;
-/* margin: auto; */
-/* justify-content: start; */
-/* width:10%; */
-/* align-items: flex-end;
+
+#footer-editorial>h2+p {
+    /* border: 2px solid rebeccapurple; */
+    width: 100%;
+    margin: auto;
+    font-family: "poppins";
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#footer-editorial>h2+p>a {
+    color: black;
+}
+
+.btn-danger {
+    /* border: 2px solid yellow; */
+    /* // made by suraj web 19 roll no 1274  */
+    /* align-items: center; */
+    display: block;
+    /* margin: auto; */
+    /* justify-content: start; */
+    /* width:10%; */
+    /* align-items: flex-end;
 align-content: flex-end; */
 }
-hr{
+
+hr {
     margin: auto;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-h2{
+
+h2 {
     margin-top: 10px;
+}
+
+.search {
+    width: 10px !important;
 }

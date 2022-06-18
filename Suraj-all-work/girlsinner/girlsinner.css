@@ -56,6 +56,7 @@
        width: 30%;
    }
    /* made by suraj web 19 roll no 1274 */
+   
    #upper>div>p {
        color: #909093;
        font-size: 14px;
@@ -83,11 +84,11 @@
        margin: 20px;
    }
    /* made by suraj web 19 roll no 1274 */
+   
    #upper>div:nth-child(3) {
        display: flex;
        justify-content: flex-end;
        align-items: flex-end;
-     
    }
    
    #upper>div:nth-child(4) {
@@ -247,6 +248,7 @@
        margin-top: 10px;
    }
    /* made by suraj web 19 roll no 1274 */
+   
    #right_Section {
        display: grid;
        /* border: 2px solid red; */
@@ -315,6 +317,7 @@
 #body>div:nth-child(2)>div{
     
 } */
+   /* <<<<<<< HEAD */
    
    .bolder:hover {
        font-weight: bold;
@@ -333,30 +336,7 @@
        display: inline-block;
        margin-top: 5px;
    }
-
-.bolder:hover{
-    font-weight: bold;
-    cursor: pointer;
-    
-}
-input [type="checkbox"]{
-  accent-color: red;
-}
-.dot {
-  height: 13px;
-  width: 13px;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: 5px;
-}
-/* made by suraj web 19 roll no 1274 */
-@media all and (min-width:480px) and (max-width:720px){
-    #body{
-       display: flex;
-         flex-direction: column;
-         /* border: 2px solid rebeccapurple; */
-    }
+   /* ======= */
    
    .bolder:hover {
        font-weight: bold;
@@ -375,6 +355,7 @@ input [type="checkbox"]{
        display: inline-block;
        margin-top: 5px;
    }
+   /* made by suraj web 19 roll no 1274 */
    
    @media all and (min-width:480px) and (max-width:720px) {
        #body {
@@ -382,41 +363,104 @@ input [type="checkbox"]{
            flex-direction: column;
            /* border: 2px solid rebeccapurple; */
        }
-       #left_section>div {
-           width: 100%;
-           /* flex-direction: column; */
+       .bolder:hover {
+           font-weight: bold;
+           cursor: pointer;
        }
-       /* #body>div{
+       input [type="checkbox"] {
+           accent-color: red;
+       }
+       .dot {
+           height: 13px;
+           width: 13px;
+           background-color: red;
+           border-radius: 50%;
+           display: inline-block;
+           margin-top: 5px;
+       }
+       @media all and (min-width:480px) and (max-width:720px) {
+           #body {
+               display: flex;
+               flex-direction: column;
+               /* border: 2px solid rebeccapurple; */
+           }
+           .bolder:hover {
+               font-weight: bold;
+               cursor: pointer;
+           }
+           input [type="checkbox"] {
+               accent-color: red;
+           }
+           .dot {
+               height: 13px;
+               width: 13px;
+               background-color: red;
+               border-radius: 50%;
+               display: inline-block;
+               margin-top: 5px;
+           }
+           @media all and (min-width:480px) and (max-width:720px) {
+               #body {
+                   display: flex;
+                   flex-direction: column;
+                   /* border: 2px solid rebeccapurple; */
+               }
+               #left_section>div {
+                   width: 100%;
+                   /* flex-direction: column; */
+               }
+               /* #body>div{
           max-height: 600px;
               overflow: -moz-hidden-unscrollable;
       } */
-      #body>div:nth-child(1){
-          width:100%;
-          /* border: 2px solid green; */
-          /* max-height: 900px; */
-              /* overflow: scroll; */
-          
-         }
-         #left_section>div:nth-child(2){
-          width:100%;
-          /* border: 2px solid green; */
-              /* overflow: scroll; */
-          /* made by suraj web 19 roll no 1274 */
-         }
-         #body>div:nth-child(2){
-          width:100%
-         }
-      #right_Section{
-          display: grid;
-          /* border: 2px solid red; */
-          width:100%;
-          margin: auto;
-          grid-template-columns: repeat(2,1fr);
-          /* gap:20px; */
-      } 
-     
-  }
-
+               #body>div:nth-child(1) {
+                   width: 100%;
+                   /* border: 2px solid green; */
+                   /* max-height: 900px; */
+                   /* overflow: scroll; */
+               }
+               #left_section>div:nth-child(2) {
+                   width: 100%;
+                   /* border: 2px solid green; */
+                   /* overflow: scroll; */
+               }
+               #body>div:nth-child(2) {
+                   width: 100%
+               }
+               #right_Section {
+                   display: grid;
+                   /* border: 2px solid red; */
+                   width: 100%;
+                   margin: auto;
+                   grid-template-columns: repeat(2, 1fr);
+                   /* gap:20px; */
+               }
+           }
+           /* >>>>>>> ba8cdcb63cd1b24023a87a437ca291a41fe434a8 */
+           #body>div:nth-child(1) {
+               width: 100%;
+               /* border: 2px solid green; */
+               /* max-height: 900px; */
+               /* overflow: scroll; */
+           }
+           #left_section>div:nth-child(2) {
+               width: 100%;
+               /* border: 2px solid green; */
+               /* overflow: scroll; */
+               /* made by suraj web 19 roll no 1274 */
+           }
+           #body>div:nth-child(2) {
+               width: 100%
+           }
+           #right_Section {
+               display: grid;
+               /* border: 2px solid red; */
+               width: 100%;
+               margin: auto;
+               grid-template-columns: repeat(2, 1fr);
+               /* gap:20px; */
+           }
+       }
        #body>div:nth-child(1) {
            width: 100%;
            /* border: 2px solid green; */
