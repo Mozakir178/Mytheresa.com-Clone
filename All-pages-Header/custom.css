@@ -123,6 +123,17 @@
     /* margin: auto; */
 }
 
+.lastpart>div:first-child {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+
+.lastpart>div:last-child {
+    position: absolute;
+    right: 7%;
+}
+
 .lastpart input {
     width: 250px;
     height: 50px;

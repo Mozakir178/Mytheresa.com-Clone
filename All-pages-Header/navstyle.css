@@ -357,10 +357,11 @@ body {
     box-sizing: border-box;
 }
 
-.container {
+
+/* .megamenu>.container {
     max-width: 1200px;
     margin: auto;
-}
+} */
 
 .row {
     display: flex;
