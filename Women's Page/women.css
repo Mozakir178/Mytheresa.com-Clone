@@ -100,7 +100,7 @@ span {
 .block-1 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 400px 150px 400px;
+    grid-template-rows: 420px 150px 420px;
     column-gap: 20px;
     grid-template-areas: "one two" "one three" "one four"
 }
@@ -153,7 +153,7 @@ span {
 .block-2 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 400px 150px 400px;
+    grid-template-rows: 420px 150px 420px;
     column-gap: 20px;
     grid-template-areas: "two one" "three one" "four one"
 }
@@ -204,7 +204,7 @@ span {
 }
 
 .tagline-2>p:first-child {
-    font-size: 15px;
+    font-size: 15px !important;
     text-transform: uppercase;
 }
 
@@ -232,4 +232,14 @@ span {
     height: 100px;
     margin-top: 50px;
     padding-top: 50px;
+}
+
+.bigfont {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.smallfont {
+    font-size: 17px !important;
+    text-transform: uppercase;
 }

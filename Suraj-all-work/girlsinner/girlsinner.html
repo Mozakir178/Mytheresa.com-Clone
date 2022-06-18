@@ -9,9 +9,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="girlsinner.css">
+
+    <link rel="stylesheet" href="/All-pages-Header/navstyle.css">
+    <link rel="stylesheet" href="/All-pages-Header/custom.css">
+
 </head>
+<div id="header"></div>
 
 <body>
+
     <hr />
     <h1>KIDS</h1>
     <h1>GIRLS</h1>
@@ -218,6 +224,17 @@
         .then(res => res.text())
         .then(data => {
             footer.innerHTML = data
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, "text/html")
+            eval(doc.querySelector("script").textContent)
+        })
+
+    let header = document.getElementById('header');
+
+    fetch('/All-Pages-Header/kidsHeader.html')
+        .then(res => res.text())
+        .then(data => {
+            header.innerHTML = data
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, "text/html")
             eval(doc.querySelector("script").textContent)
