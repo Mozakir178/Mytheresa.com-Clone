@@ -89,6 +89,7 @@ function priceFilter(){
        })
       //  disptable(menarr)
       // console.log(selected)
+        // made by suraj web 19 roll no 1274 
      } 
      if(selected=="sortby"){
       kidsdata.sort(function(a,b){
@@ -105,6 +106,7 @@ function priceFilter(){
         return 0
        })
       //  disptable(menarr)
+        // made by suraj web 19 roll no 1274 
      }
      disptable(kidsdata) 
     }
@@ -125,6 +127,7 @@ function disptable(k){
     //   changeimage(kidsdata,index)
     //   // console.log(el.image)
     // })
+      // made by suraj web 19 roll no 1274 
     var p1 = document.createElement("p")
     p1.innerText = el.name
     var p2 = document.createElement("p")
@@ -141,7 +144,7 @@ function disptable(k){
    })
   //  function changeimage(kidsdata,index){
   //   console.log(kidsdata.image1)
-   
+     // made by suraj web 19 roll no 1274 
   //  }
 }
 function addall(el){
@@ -160,6 +163,7 @@ Array.from(allData).forEach(function(e,i){
     let checkbox=document.getElementsByClassName("check")[i]
   
     // console.log(checkbox.value);
+      // made by suraj web 19 roll no 1274 
     if(checkbox.checked==true){
 
 
@@ -187,6 +191,7 @@ function CheckboxFun(arr){
       return x.name==e;
     })
     // console.log(result)
+      // made by suraj web 19 roll no 1274 
    newArray.push(result)
   
   })
@@ -195,6 +200,7 @@ function CheckboxFun(arr){
   for(let i=0;i<newArray.length;i++){
         for(let j=0;j<newArray[i].length;j++){
           // console.log(newArray[i][j])
+            // made by suraj web 19 roll no 1274 
           lastArray.push(newArray[i][j])
         }
   }

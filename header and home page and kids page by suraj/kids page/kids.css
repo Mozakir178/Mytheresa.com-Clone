@@ -47,6 +47,7 @@ grid-template-rows: repeat(4,400px); */
 
 #main>div:nth-child(3) {
     /* background-color: green; */
+    /* // made by suraj web 19 roll no 1274  */
     grid-area: c;
 }
 
@@ -76,6 +77,9 @@ grid-template-rows: repeat(4,400px); */
     /* border: 2px solid red; */
     width: 15%;
     margin: auto;
+    /* // made by suraj web 19 roll no 1274  */
+    width: 15%;
+    margin: auto;
     font-family: "poppins";
 }
 
@@ -94,6 +98,66 @@ grid-template-rows: repeat(4,400px); */
     margin-top: 70px;
     width: 80%;
 } */
+
+hr #footer-editorial {
+    width: 80%;
+    margin: auto;
+}
+
+#footer-editorial>h1 {
+    /* border: 2px solid rebeccapurple; */
+    width: 40%;
+    margin: auto;
+    font-family: "poppins";
+    font-size: 15px;
+    word-spacing: 5px;
+}
+
+#footer-editorial>h1+p {
+    /* border: 2px solid rebeccapurple; */
+    /* // made by suraj web 19 roll no 1274  */
+    width: 100%;
+    margin: auto;
+    font-family: "poppins";
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#footer-editorial>h1+p>a {
+    color: black;
+}
+
+#footer-editorial>h2 {
+    font-family: "poppins";
+    font-size: 17px;
+}
+
+#footer-editorial>h2+p {
+    /* border: 2px solid rebeccapurple; */
+    width: 100%;
+    margin: auto;
+    font-family: "poppins";
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#footer-editorial>h2+p>a {
+    color: black;
+}
+
+.btn-danger {
+    /* border: 2px solid yellow; */
+    /* // made by suraj web 19 roll no 1274  */
+    /* align-items: center; */
+    display: block;
+    /* margin: auto; */
+    /* justify-content: start; */
+    /* width:10%; */
+    /* align-items: flex-end;
+align-content: flex-end; */
+}
 
 hr {
     margin: auto;
