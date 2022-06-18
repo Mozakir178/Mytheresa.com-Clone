@@ -1,5 +1,5 @@
 body {
-    width: 85%;
+    width: 80%;
     margin: auto;
     box-sizing: border-box;
 }
@@ -49,7 +49,6 @@ a {
     background-color: #f6f6f6;
     font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
     padding-top: 2vw;
-    box-shadow: black 0px 0px 2px 0px;
 }
 
 .bgc-ash:hover {
@@ -105,9 +104,10 @@ span {
     grid-template-areas: "one two" "one three" "one four"
 }
 
-.block-1>div {
+
+/* .block-1>div {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
+} */
 
 .block-1>div:first-child {
     grid-area: one;
@@ -158,9 +158,10 @@ span {
     grid-template-areas: "two one" "three one" "four one"
 }
 
-.block-2>div {
+
+/* .block-2>div {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
+} */
 
 .block-2>div:first-child {
     grid-area: one;
@@ -235,11 +236,30 @@ span {
 }
 
 .bigfont {
+    margin: auto;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    max-width: 500px !important;
 }
 
 .smallfont {
+    margin: auto;
     font-size: 17px !important;
     text-transform: uppercase;
+    max-width: 500px !important;
+}
+
+.bigfonta {
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 30px;
+    max-width: 500px !important;
+}
+
+.smallfonta {
+    margin: auto;
+    margin-top: -40px;
+    font-size: 17px !important;
+    text-transform: uppercase;
+    max-width: 500px !important;
 }

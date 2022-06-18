@@ -1,0 +1,243 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+#navbar>div:first-child {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 160%;
+}
+
+#navbar>div:last-child {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+#navbar>div:first-child>a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar>div:last-child>a {
+    text-decoration: none;
+    color: rgb(113, 112, 112);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar>div:last-child>a:hover {
+    font-weight: 580;
+    color: black;
+}
+
+#navbar>div+div>a:nth-child(3)>span {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+#navbar>div+div>a:nth-child(3)>span:hover {
+    font-weight: 580;
+}
+
+#navbar>div+div>a:nth-child(3) {
+    margin-top: -10.5px;
+}
+
+
+/* Upper Navbar CSS completed */
+
+#logo-bag {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    display: flex;
+    width: 80%;
+    /* justify-content: space-between; */
+}
+
+#logo-bag>img {
+    width: 270px;
+    /* margin: auto auto auto 450px; */
+    position: absolute;
+    left: 42%;
+}
+
+#logo-bag>p {
+    font-size: 13px;
+    margin-top: 17px;
+    position: absolute;
+    left: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 87px;
+    font-size: 18px;
+}
+
+.shop {
+    position: fixed;
+    margin-left: 16.6%;
+    font-size: 20px !important;
+}
+
+#logo-bag>p>span {
+    font-size: 35px;
+}
+
+#logo-bag>img+p {
+    position: absolute;
+    left: 945px;
+    top: 70px;
+}
+
+#logo-bag>img+p:hover {
+    cursor: pointer;
+}
+
+.lastpart {
+    display: flex;
+    margin: 100px 0px 30px 0;
+    justify-content: space-between;
+    position: sticky !important;
+    top: 50px !important;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.lastpart>div:first-child {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+
+.lastpart>div:last-child {
+    position: absolute;
+    right: 7%;
+}
+
+.lastpart input {
+    width: 250px;
+    height: 50px;
+}
+
+.shop a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Logo & Bag CSS done */
+
+
+/* 
+#mainPart {
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    margin: auto auto auto 40px;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    background-color: white;
+} */
+
+
+/* 
+#mainPart>li {
+    width: 108px;
+    line-height: 25px;
+    float: left;
+    font-size: 13px;
+    color: grey;
+    margin-top: 10px;
+} */
+
+
+/* 
+#mainPart>li>a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#mainPart>li>a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: grey;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainPart>li>#mega>ul>li {
+    display: none;
+}
+
+#mainPart li:hover #mega li {
+    display: block;
+} */
+
+
+/* 
+.liHead {
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    color: black;
+    background-color: rgb(204, 203, 203);
+    margin-top: 4px;
+}
+
+#mega {
+    display: flex;
+}
+
+#mega>ul:first-child {
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+#mega>ul:nth-child(2) {
+    margin-top: 0px;
+}
+
+#mega>ul:nth-child(3) {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 3px 20px;
+    margin-left: 20px;
+}
+
+#line {
+    margin-top: -8px;
+    position: sticky;
+    top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+li:hover {
+    color: black;
+    cursor: pointer;
+} */
