@@ -86,6 +86,7 @@ function priceFilter(){
         if(a.price<b.price) return -1
         return 0
         // console.log(a.price)
+          // made by suraj web 19 roll no 1274 
        })
       //  disptable(menarr)
       // console.log(selected)
@@ -111,6 +112,7 @@ function priceFilter(){
   function brandfilter(){
 
   }
+    // made by suraj web 19 roll no 1274 
 disptable(kidsdata)
 function disptable(k){
     document.getElementById("productlength").innerText = `${count} products `
@@ -141,7 +143,7 @@ function disptable(k){
    })
   //  function changeimage(kidsdata,index){
   //   console.log(kidsdata.image1)
-   
+     // made by suraj web 19 roll no 1274 
   //  }
 }
 function addall(el){
@@ -175,6 +177,7 @@ Array.from(allData).forEach(function(e,i){
     }
   })
 })
+  // made by suraj web 19 roll no 1274 
 function CheckboxFun(arr){
   let newArray=[];
 
@@ -202,6 +205,7 @@ function CheckboxFun(arr){
 }
 // shwocheckbox()
 // var show = false;
+  // made by suraj web 19 roll no 1274 
 // function shwocheckbox(){
 //   var checkbo = document.getElementById("hide");
 //   if(!show){
@@ -212,5 +216,5 @@ function CheckboxFun(arr){
 //     show=false;
 //   }
 // }
-
+  // made by suraj web 19 roll no 1274 
 disptable(kidsdata)

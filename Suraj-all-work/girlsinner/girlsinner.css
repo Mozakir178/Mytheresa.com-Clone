@@ -55,7 +55,7 @@
        height: 100%;
        width: 30%;
    }
-   
+   /* made by suraj web 19 roll no 1274 */
    #upper>div>p {
        color: #909093;
        font-size: 14px;
@@ -82,7 +82,7 @@
    #upper>div>select>option {
        margin: 20px;
    }
-   
+   /* made by suraj web 19 roll no 1274 */
    #upper>div:nth-child(3) {
        display: flex;
        justify-content: flex-end;
@@ -246,7 +246,7 @@
        font-weight: bold;
        margin-top: 10px;
    }
-   
+   /* made by suraj web 19 roll no 1274 */
    #right_Section {
        display: grid;
        /* border: 2px solid red; */
@@ -350,6 +350,7 @@ input [type="checkbox"]{
   display: inline-block;
   margin-top: 5px;
 }
+/* made by suraj web 19 roll no 1274 */
 @media all and (min-width:480px) and (max-width:720px){
     #body{
        display: flex;
@@ -400,7 +401,7 @@ input [type="checkbox"]{
           width:100%;
           /* border: 2px solid green; */
               /* overflow: scroll; */
-          
+          /* made by suraj web 19 roll no 1274 */
          }
          #body>div:nth-child(2){
           width:100%
