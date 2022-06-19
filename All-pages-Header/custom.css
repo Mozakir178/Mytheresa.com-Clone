@@ -189,9 +189,10 @@ body {
 
 
 /* .container {
-    max-width: 1200px;
-    margin: auto;
-} */
+    /* max-width: 1200px; */
+    /* margin: auto; */
+    
+/* }  */
 
 .row {
     display: flex;
@@ -222,7 +223,7 @@ a {
     z-index: 99;
     padding: 15px;
     margin: auto;
-    position: sticky;
+    /* position: fixed; */
     top: 0;
     background-color: white;
 }
