@@ -21,76 +21,8 @@ html::-webkit-scrollbar-thumb {
     color: black;
 }
 
-.top-part {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 70px;
-}
-
-.top-part>div:first-child {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    font-size: 110%;
-}
-
-.top-part>div:first-child * {
-    font-weight: bold !important;
-}
-
-.top-part>div:last-child {
-    display: flex;
-    gap: 20px;
-    width: 50%;
-    text-align: center;
-}
-
-.top2>p:first-child {
-    width: 150% !important;
-}
-
-.bottom-part {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    margin-top: 70px;
-}
-
-.bottom-part>div:first-child {
-    display: flex;
-    justify-content: center;
-    font-size: 110%;
-    /* flex-wrap: wrap; */
-    width: 45%;
-}
-
-.bottom-part>div:first-child>* {
-    width: fit-content;
-}
-
-.bottom-part>div:last-child>* {
-    width: 250px;
-    height: 40px;
-}
-
-#logo {
-    /* border: 2px solid var(--red); */
-    width: 40%;
-    margin: auto;
-}
-
-#logo>img {
-    width: 50%;
-    display: block;
-    margin: auto;
-}
-
-#shopingbag {
-    width: 90%;
+br+#shopingbag {
+    width: 80%;
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
@@ -263,14 +195,16 @@ p {
     transition: .7s all ease;
 }
 
-#cont {
-    margin-top: 70px;
+#check #cont {
+    /* margin-top: 70px; */
     width: 35%;
     padding: 12px;
     border: none;
     background-color: #f2f2f2;
     font-family: "Poppins";
     color: black;
+    margin-right: 80%;
+    text-align: center;
 }
 
 h4 {
@@ -282,7 +216,8 @@ h4 {
     /* border: 2px solid red; */
     width: 40%;
     display: block;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 62%;
 }
 
 .cen {
@@ -332,4 +267,10 @@ h4 {
     margin-left: 45%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#bag>div:first-child>p {
+    width: 200px !important;
+    position: absolute;
+    right: 18%;
 }

@@ -206,4 +206,15 @@
             const doc = parser.parseFromString(data, "text/html")
             eval(doc.querySelector("script").textContent)
         })
+
+    let mens = document.querySelectorAll('img');
+
+    for (let i = 0; i < mens.length; i++) {
+        mens[i].addEventListener("click", gotomens);
+
+    }
+
+    function gotomens(event) {
+        location.replace("/Suraj-all-work/womensinner/womeninner.html")
+    }
 </script>

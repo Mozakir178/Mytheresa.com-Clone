@@ -135,11 +135,19 @@ document.querySelector("#code").addEventListener("click", promoCode)
 //function for proceed to checkout
 document.querySelector("#btn2").addEventListener("click", function() {
     let total = document.querySelector("#grandtotal").innerText
-    if (data.length == 0) {
-        alert("Your cart is empty")
+
+    let user = localStorage.getItem("permision");
+    console.log(user);
+    if (user == "allow") {
+        if (data.length == 0) {
+            alert("Your cart is empty")
+        } else {
+            localStorage.setItem("total", (total))
+            window.location.href = "/Payment Page/address.html"
+        }
     } else {
-        localStorage.setItem("total", (total))
-        window.location.href = "/Payment Page/address.html"
+        alert("Please login first")
+        window.location.href = "/Suraj-all-work/signup.html"
     }
 
 })
@@ -165,16 +173,14 @@ function promoCode() {
 dispcart(data)
 total();
 
-document.getElementById('womenspage').addEventListener('click', womenspage);
-// document.getElementById('menspage').addEventListener('click', menspage);
-// document.getElementById('kidspage').addEventListener('click', kidspage);
-document.getElementById('lifepage').addEventListener('click', lifepage);
 
-function womenspage(event) {
-    window.location.href = "../Women's-Page/women.html"
-}
+let header = document.getElementById('header');
 
-
-function lifepage(event) {
-    window.location.href = "../LifePage/life.html"
-}
+fetch('/All-Pages-Header/header.html')
+    .then(res => res.text())
+    .then(data => {
+        header.innerHTML = data
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, "text/html")
+        eval(doc.querySelector("script").textContent)
+    })

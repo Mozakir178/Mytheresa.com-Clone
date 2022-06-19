@@ -36,7 +36,7 @@
                     <a href="/Suraj-all-work/signup.html">Signup for Newsletter</a>
                 </li>
                 <li>
-                    <a href="/Suraj-all-work/signup.html">My account</a>
+                    <a href="/Suraj-all-work/myaccinfo.html">My account</a>
                 </li>
                 <li>
                     <a href="/addtocart/cart.html">My wishlist</a> <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="11"
@@ -465,7 +465,7 @@
                     <input id="search " type="search " pattern=".*\S.* " required>
                     <span class="caret "></span>
                 </form> -->
-                <input type="text" name="search"  placeholder="Search.." >
+                <input type="text" name="search" placeholder="Search..">
 
             </div>
         </div>
@@ -488,10 +488,11 @@
     // document.getElementsByClassName("header ")
     // window.scroll.
     var kidsarr = JSON.parse(localStorage.getItem("cartdetail"))
-    // console.log(kidsarr.length)
-   document.querySelector("#coo").innerHTML = kidsarr.length
-//    let data=document.querySelector('#coo').innerHTML;
-//    console.log(data)
-   
-   
+    var cow = document.querySelector("#coo")
+    cow.innerText = kidsarr.length
+    console.log(cow)
+        // console.log(kidsarr.length)
+    document.querySelector("#coo").innerHTML = kidsarr.length
+        //    let data=document.querySelector('#coo').innerHTML;
+        //    console.log(data)
 </script>
