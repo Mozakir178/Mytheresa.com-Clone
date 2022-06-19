@@ -163,6 +163,7 @@ hr {
 #bag>div>p {
     /* border: 2px solid red; */
     width: 100%;
+    margin-top: 13px;
     text-align: right;
     font-family: "poppins";
     font-size: 13px;
