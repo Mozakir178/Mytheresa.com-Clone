@@ -1,9 +1,9 @@
-    /* html{
+  /* html{
         scrollbar-width: normal;
         scrollbar-color: black;
       } */
-    
-    body {
+  
+      body {
         background-color: white;
     }
     
@@ -24,13 +24,13 @@
     }
     
     h1 {
-        /* width: 4.4%; */
-        text-align: center;
+        /* width: 3.5%; */
         /* border: 2px solid red; */
         margin: auto;
         font-size: 13px;
         font-family: "poppins";
         letter-spacing: 5px;
+        text-align: center;
     }
     
     h1+h1 {
@@ -39,7 +39,6 @@
         margin: auto;
         font-family: "poppins";
         font-size: 17px;
-        /* letter-spacing: 5px; */
     }
     
     #upper {
@@ -73,7 +72,7 @@
         margin: 0;
         margin: auto;
         /* justify-content: flex-end;
-            align-items: flex-end; */
+              align-items: flex-end; */
         padding: 4px 2px;
         font-size: 12px;
         overflow: hidden;
@@ -144,7 +143,7 @@
         flex-direction: column;
         margin-left: 10px;
         /* max-height: 200px;
-            overflow: scroll; */
+              overflow: scroll; */
     }
     
     #left_section>div:nth-child(1) {
@@ -224,9 +223,9 @@
         /* background: linear-gradient(black,grey); */
     }
     /* #right_section{
-        border: 2px solid black;
-      width:70%
-       } */
+          border: 2px solid black;
+        width:70%
+         } */
     
     input[type=text] {
         width: 130px;
@@ -244,6 +243,7 @@
     
     .bold {
         font-weight: bold;
+        margin-top: 10px;
     }
     
     #right_Section {
@@ -287,6 +287,7 @@
         width: 20%;
         /* border: 2px solid red; */
         margin: auto;
+        font-size: 14px;
         margin-top: 5px;
     }
     
@@ -306,13 +307,13 @@
         transition: all .5s ease;
     }
     /* #body>div:nth-child(2){
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3,1fr);
-}
-#body>div:nth-child(2)>div{
-    
-} */
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(3,1fr);
+  }
+  #body>div:nth-child(2)>div{
+      
+  } */
     
     .bolder:hover {
         font-weight: bold;
@@ -343,9 +344,9 @@
             /* flex-direction: column; */
         }
         /* #body>div{
-          max-height: 600px;
-              overflow: -moz-hidden-unscrollable;
-      } */
+            max-height: 600px;
+                overflow: -moz-hidden-unscrollable;
+        } */
         #body>div:nth-child(1) {
             width: 100%;
             /* border: 2px solid green; */

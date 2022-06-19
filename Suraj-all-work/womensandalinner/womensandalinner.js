@@ -130,7 +130,7 @@ function disptable(k){
     var p1 = document.createElement("p")
     p1.innerText = el.name
     var p2 = document.createElement("p")
-    p2.innerText = el.desc
+    // p2.innerText = el.desc
     var h4 = document.createElement("h4")
     h4.innerText = `€ ${el.price}`
     var btn = document.createElement("button")
