@@ -8,7 +8,7 @@ img:hover {
     cursor: pointer;
 }
 
-a {
+.womenpage a {
     text-decoration: none;
     color: white;
     margin-bottom: 30px;

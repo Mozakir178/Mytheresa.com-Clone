@@ -43,9 +43,9 @@
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0 0 0.67em;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h4 {
@@ -62,7 +62,7 @@ h4 {
     text-align: center;
 }
 
-body {
+#main-container-life body {
     font-size: 14px;
     letter-spacing: .8px;
     color: #000;
