@@ -1,7 +1,16 @@
 :root {
     --red: red
 }
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+}
 
+html::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    /* background-color: black; */
+    background: linear-gradient(black, grey);
+}
 * {
     letter-spacing: 0.06em;
 }

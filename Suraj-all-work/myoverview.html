@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap"
+        rel="stylesheet">
+   <!-- <link rel="stylesheet" href="myoverview.css"> -->
+   <style>
+    #body{
+        width:80%;
+        margin: auto;
+        /* border: 2px solid red; */
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #body>div:nth-child(1){
+        width:23%;
+        /* border: 2px solid blue; */
+        
+    }
+    #body>div:nth-child(2){
+        width:70%;
+        /* border: 2px solid blue; */
+        
+    }
+    .block{
+        display: block;
+        line-height: 25px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: black;
+    }
+    #body>div:nth-child(2){
+        width:70%;
+        /* border: 2px solid pink; */
+        display: grid;
+        grid-template-areas: 
+        
+        "a a"
+        "b c"
+        "d e"
+        "f f"
+        ;
+        line-height: 30px;
+        gap:10px;
+    }
+    #body>div:nth-child(2)>div:nth-child(1){
+        background-color: #f2f2f2;
+        grid-area: a;
+        text-align: center;
+        padding: 15px;
+    }
+    #body>div:nth-child(2)>div:nth-child(1)>p+p{
+        width:80%;
+        margin: auto;
+    }
+    #body>div:nth-child(2)>div:nth-child(2){
+        /* background-color: blue; */
+        grid-area: b;
+        /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+        border:1px solid;
+        padding: 5px;
+    }
+    #body>div:nth-child(2)>div:nth-child(3){
+        /* background-color: pink; */
+        grid-area: c;
+        /* text-align: center; */
+        margin-top: 40px;
+        /* border:1px solid; */
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     
+    }
+    #body>div:nth-child(2)>div:nth-child(4){
+        /* background-color: yellow; */
+        grid-area: d;
+        border:1px solid;
+        padding: 5px;
+    }
+    #body>div:nth-child(2)>div:nth-child(5){
+        /* background-color: teal; */
+        grid-area: e;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        padding: 10px;
+    }
+    #body>div:nth-child(2)>div:nth-child(6){
+        /* background-color: purple; */
+        grid-area: f;
+        border:1px solid;
+        padding: 5px;
+    }
+    .flex{
+        width:80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn{
+        border: none;
+        background-color: #f2f2f2;
+        color: black;
+        padding: 10px;
+        margin-top: 20px;
+    }
+   </style>
+   
+</head>
+
+<body>
+    <hr />
+   
+    <div id="body">
+        <div id="left_section">
+            <div>
+             <p class="bold">MY ACCOUNT</p>
+             <a href="myoverview.html" class="block">my overview</a>
+             <a href="myaccinfo.html" class="block">my account information</a>
+             <a href="myaddress.html" class="block">my address book</a>
+             <a href="myorders.html" class="block">my orders</a>
+             <a href="" class="block">my gift certificates</a>
+             <a href="" class="block">my wishlist</a>
+               
+            </div>
+        
+      
+        </div>
+        <div id="right_Section">
+           
+           <div>
+            <p>HELLO, <span>SURAJ KUSHWAHA!</span></p>
+            <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
+           </div>
+           <div>
+            <p>MY ACCOUNT INFORMATION</p>
+            <p>Name  <span>Suraj Kushwaha</span></p>
+            <p>E-mail  <span>ss971600@gmail.com</span></p>
+           </div>
+           <div>
+           <a href=""class="block">Edit</a>
+           <a href=""class="block">Change Password</a>
+           </div>
+           <div>
+            <p>MY ADDRESS BOOK</p>
+            <p>Default Billing Address</p>
+            <p>You have not set a default billing address.</p>
+            <a href=""class="block">Change</a>
+           </div>
+           <div>
+            <p>Default Shipping Address</p>
+            <p>You have not set a default shipping address.</p>
+            <a href=""class="block">Change</a>
+           </div>
+           <div>
+            <p>EASY-ACCESS LOGIN</p>
+            <input type="checkbox" required><span>Do not permit automatic identification prior to logging in!</span>
+            <button class="btn block">EASY-ACCESS LOGIN</button>
+           </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/910e606fce.js" crossorigin="anonymous"></script>
+
