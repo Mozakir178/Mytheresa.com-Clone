@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< HEAD
     
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap"
@@ -25,23 +24,7 @@
     #body>div:nth-child(1){
         width:23%;
         /* border: 2px solid blue; */
-=======
-
-    <link rel="stylesheet" href="/All-pages-Header/custom.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="myoverview.css"> -->
-    <style>
-        #body {
-            width: 80%;
-            margin: auto;
-            /* border: 2px solid red; */
-            height: 300px;
-            display: flex;
-            justify-content: space-between;
-        }
->>>>>>> 8e2ef1e75684d31d89e774f6874be7ae0899cc71
-        
+    }
         #body>div:nth-child(1) {
             width: 23%;
             /* border: 2px solid blue; */
@@ -106,7 +89,6 @@
 <body>
 
 
-<<<<<<< HEAD
     <div id="cont">
         <div>
             <ul>
@@ -565,9 +547,6 @@
         </div>
     </header>
     <!-- header end -->
-=======
-    <div id="header"></div>
->>>>>>> 8e2ef1e75684d31d89e774f6874be7ae0899cc71
     <hr />
 
     <div id="body">
@@ -599,13 +578,3 @@
 
 </html>
 <script src="https://kit.fontawesome.com/910e606fce.js" crossorigin="anonymous"></script>
-<script>
-    fetch('/All-Pages-Header/lifeHeader.html')
-        .then(res => res.text())
-        .then(data => {
-            header.innerHTML = data
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, "text/html")
-            eval(doc.querySelector("script").textContent)
-        })
-</script>
