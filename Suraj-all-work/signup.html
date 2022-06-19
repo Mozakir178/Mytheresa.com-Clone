@@ -17,7 +17,7 @@
             /* border: 2px solid red; */
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap:40px;
+            gap: 40px;
             /* height: 700px; */
         }
         
@@ -100,8 +100,6 @@
         .bolda {
             font-weight: bold;
         }
-     
-    
     </style>
 </head>
 
@@ -192,8 +190,10 @@
 
         } else if (data.password1 != data.password2) {
             alert("please check your password")
+            localStorage.setItem("permision", "notallow");
         } else {
             alert("Email already exist")
+            localStorage.setItem("permision", "notallow");
         }
 
     })
@@ -230,10 +230,12 @@
         }
         if (is) {
             alert("login successfull")
+            localStorage.setItem("permision", "allow");
             location.replace("/Women's Page/women.html")
                 //    localStorage.setItem("loginAs",JSON.stringify(data[a].name))
         } else {
             alert('wrong details')
+            localStorage.setItem("permision", "notallow");
         }
 
     }
