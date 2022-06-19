@@ -133,22 +133,33 @@ document.querySelector("#code").addEventListener("click", promoCode)
 
 
 //function for proceed to checkout
-document.querySelector("#btn2").addEventListener("click", function() {
-    let total = document.querySelector("#grandtotal").innerText
+// document.querySelector("#btn2").addEventListener("click", function() {
+//     let total = document.querySelector("#grandtotal").innerText
 
-    let user = localStorage.getItem("permision");
-    console.log(user);
-    if (user == "allow") {
-        if (data.length == 0) {
-            alert("Your cart is empty")
-        } else {
-            localStorage.setItem("total", (total))
-            window.location.href = "/Payment Page/address.html"
-        }
-    } else {
-        alert("Please login first")
-        window.location.href = "/Suraj-all-work/signup.html"
-    }
+//     let user = localStorage.getItem("permision");
+//     console.log(user);
+//     if (user == "allow") {
+//         if (data.length == 0) {
+//             alert("Your cart is empty")
+//         } else {
+//             localStorage.setItem("total", (total))
+//             window.location.href = "/Payment Page/address.html"
+//         }
+//     } else {
+//         alert("Please login first")
+//         window.location.href = "/Suraj-all-work/signup.html"
+//     }
+
+// })
+
+document.querySelector("#btn2").addEventListener("click", function() {
+    var userdata = JSON.parse(localStorage.getItem("userdetail"))
+   if(userdata==null){
+    window.location.href = "/Suraj-all-work/signup.html"
+   }
+   else{
+    window.location.href = "/Payment Page/address.html"
+   }
 
 })
 
