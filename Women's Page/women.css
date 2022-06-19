@@ -97,7 +97,7 @@ span {
 }
 
 .block-1 {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 420px 150px 420px;
     column-gap: 20px;
@@ -151,7 +151,7 @@ span {
 }
 
 .block-2 {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 420px 150px 420px;
     column-gap: 20px;

@@ -155,8 +155,9 @@ hr {
 
 #bag .cartPage span {
     position: absolute;
-    top: 37%;
-    left: 19%;
+    top: 37% !important;
+    left: 19% !important;
+    font-size: 15px;
 }
 
 #bag>div>p {
