@@ -29,7 +29,7 @@
         <div class="otp">
             <h1>Please enter your mobile number</h1>
 
-            <input type="number" placeholder="111 222 3333">
+            <input type="text" placeholder="111 222 3333" maxlength="10">
 
             <button onclick="getOtp()">Submit</button>
 
@@ -107,10 +107,19 @@
     }
 
 
-    let total = localStorage.getItem("total");
-    console.log(total)
+    // let total = localStorage.getItem("total");
+    // console.log(total)
         // total = Number(total);
+    
+
+    var grandtotal = JSON.parse(localStorage.getItem("GGtotal"))
+    // console.log(grandtotal)
+    var sum = 0;
+    for(var i =0;i<grandtotal.length;i++){
+      sum+= grandtotal[i]
+    }
+    console.log(sum)
     const h1 = document.createElement('h1');
-    h1.innerText = "Total amount: " + total;
+    h1.innerText = "Total amount: " + sum;
     document.querySelector('.otp').append(h1);
 </script>

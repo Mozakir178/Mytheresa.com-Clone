@@ -100,7 +100,7 @@ function productQuantityMinus(span, price, acutalPrice) {
     total();
     console.log(count)
 }
-
+var TToal =[];
 function total() {
     let totalData = document.querySelectorAll('tbody td:last-child');
     let totalPrice = 0;
@@ -112,8 +112,17 @@ function total() {
         totalPrice += data;
         priceTag.innerText = totalPrice;
         priceTag1.innerText = totalPrice
+        TToal.push(data)
+        localStorage.setItem("GGtotal",JSON.stringify(TToal))
     })
+   
 }
+
+// console.log(TToal)
+// grand total
+// var gratot = document.getElementById("grandtotal").innerText
+// console.log(gratot)
+
 
 // delete Product Page 
 function deleteProduct(el, index) {
