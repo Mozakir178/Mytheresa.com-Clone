@@ -131,4 +131,19 @@
 
 </html>
 <script src="https://kit.fontawesome.com/910e606fce.js" crossorigin="anonymous"></script>
+<script>
+    document.querySelector("form").addEventListener("submit",myfun)
+    var ud = []
+    myfun()
+    function myfun(){
+        event.preventDefault()
+        var obj = {
+            name: document.getElementById("fname").value,
+            email: document.getElementById("email").value
+        }
+        ud.push(obj)
+      localStorage.setItem("udet",JSON.stringify(ud))
+      window.location.href="myoverview.html"
+    }
+</script>
 

@@ -114,7 +114,7 @@
             <form id="form">
                 <input type="text" id="fname"  placeholder="first name *"><br>
                 <input type="text" id="lname"  placeholder="last name *"><br>
-                <input type="email" id="email"  placeholder="Email address *" required ><br>
+                <input type="email" id="email"  placeholder="Email address *" ><br>
                 <input type="text" id="phone"  placeholder="Phone no without +91*" maxlength="10"><br>
                 <input type="text" id="add1"  placeholder="Street address *"><br>
                 <input type="text" id="hno"  placeholder="House No *"><br>
@@ -379,4 +379,18 @@
 
 </html>
 <script src="https://kit.fontawesome.com/910e606fce.js" crossorigin="anonymous"></script>
+<script>
+    document.querySelector("form").addEventListener("submit",myfun)
+    var ud = []
+    myfun()
+    function myfun(){
+        event.preventDefault()
+        var obj = {
+            add: document.getElementById("add1").value,
+        }
+        ud.push(obj)
+      localStorage.setItem("add",JSON.stringify(ud))
+      window.location.href="myoverview.html"
+    }
+</script>
 

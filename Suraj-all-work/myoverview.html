@@ -137,13 +137,13 @@
         <div id="right_Section">
            
            <div>
-            <p>HELLO, <span class="block">SURAJ KUSHWAHA!</span></p>
+            <p>HELLO, <span class="block" id="mainname">SURAJ KUSHWAHA!</span></p>
             <p class="block">From your My Account Dashboard you have the ability to view a snapshot of your recent account activity and update your account information. Select a link below to view or edit information.</p>
            </div>
            <div>
             <p class="block">MY ACCOUNT INFORMATION</p>
-            <p class="block">Name  <span class="block">Suraj Kushwaha</span></p>
-            <p class="block">E-mail  <span class="block">ss971600@gmail.com</span></p>
+            <p class="block">Name  <span class="block" id="dispname">Suraj Kushwaha</span></p>
+            <p class="block">E-mail  <span class="block" id="dispemail">ss971600@gmail.com</span></p>
            </div>
            <div>
            <a href="myaccinfo.html"class="block">Edit</a>
@@ -152,12 +152,12 @@
            <div>
             <p class="block">MY ADDRESS BOOK</p>
             <p class="block">Default Billing Address</p>
-            <p class="block">You have not set a default billing address.</p>
+            <p class="block" id="addreal">You have not set a default billing address.</p>
             <a href="myaddress.html"class="block">Change</a>
            </div>
            <div>
             <p class="block">Default Shipping Address</p>
-            <p class="block">You have not set a default shipping address.</p>
+            <p class="block" id="addreal2">You have not set a default shipping address.</p>
             <a href="myaddress.html"class="block">Change</a>
            </div>
            <div>
@@ -171,4 +171,14 @@
 
 </html>
 <script src="https://kit.fontawesome.com/910e606fce.js" crossorigin="anonymous"></script>
+<script>
+    var ud = JSON.parse(localStorage.getItem("udet"))
+    var add = JSON.parse(localStorage.getItem("add"))
+    document.getElementById("dispname").innerText=ud[0].name
+    document.getElementById("mainname").innerText=ud[0].name
+    document.getElementById("dispemail").innerText=ud[0].email
+    document.getElementById("addreal").innerText= add[0].add
+    document.getElementById("addreal2").innerText= add[0].add
+// console.log(ud)
+</script>
 
