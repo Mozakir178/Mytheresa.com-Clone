@@ -13,7 +13,8 @@ Description: Myteresa.com is an E-commerce website famous for its luxury product
 
 
 ### Checkout Live
-<a href="https://sunny-bubblegum-120988.netlify.app/" > Go Live</a>  
+<a href="https://sunny-bubblegum-120988.netlify.app/" > Go Live</a> 
+Feel free to give your valuable feedback
 
 ### Home Page
 ![](https://github.com/Mozakir178/Mytheresa.com-Clone/blob/main/mytherasa.jpg)
