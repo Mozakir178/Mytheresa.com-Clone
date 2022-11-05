@@ -9,11 +9,17 @@ Responsibilities: Managed team | Managed Git Repository | Life section | Payment
 
 # Team Members
 1- Mohammad Zakir
+
 2- Suraj
+
 3- Kinnera Madhu
+
 4- Pawan Kumar
+
 5- Moin Khan
+
 6- Anwar
+
 7- Sandru Saikumar
 
 Tech Stack Used: JavaScript | HTML | CSS 
